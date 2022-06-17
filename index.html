@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <title>Miao</title>
+</head>
+
+<body>
+  <main class="main_container">
+    <header class="header_cls">
+      <img class="logo_img" src="./images/logo.png" alt="miao">
+      <nav class="menu">
+        <p class="menu_item active"><a href="./index.html">HOME</a></p>
+        <p class="menu_item"><a href="./about.html">ABOUT</a></p>
+        <p class="menu_item"><a href="./portfolio.html">PORTFOLIO</a></p>
+        <p class="menu_item"><a href="./contact.html">CONTACT</a></p>
+      </nav>
+    </header>
+
+
+    <section class="body_cls">
+      <h1 class="title">
+        <img class="flower_img" src="./images/flower.png" alt="flower">
+        <span class="label">Hi，I am <span class="primary_orange">Molly Miao</span></span>
+      </h1>
+
+      <p class="desc_p">UI UX AND ILLUSTRATION</p>
+      <p class="desc_p">TYPE AND GRAPHIC DESIGN</p>
+
+      <button class="aboutme_btn" onclick="document.location='./about.html'">About Me</button>
+
+      <div class="banner_div">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <!-- slider1 -->
+              <img src="./images/banner1.png" alt="banner1">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/banner2.png" alt="banner2">
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+
+      <div class="gallery">
+        <div class="gallery_title">
+          <img src="./images/bear.png" alt="bear">
+          <span>My Gallery</span>
+        </div>
+        <div class="gallery_desc primary_orange">
+          Professional illustrator competent in UI design,film making,<br />
+          illustration and poster making.
+        </div>
+
+        <button class="viewall_btn" onclick="document.location='./portfolio.html'">VIEW ALL</button>
+        <div class="gallery_timeline">
+          <div class="triangle"></div>
+          <div class="gallery_set">
+            
+            <div class="timeline-block">
+              <div class="timeline-img cd-picture ">
+                <img src="./images/camera-icon.png" alt="Picture">
+              </div>
+              <div class="timeline-content projects ">
+                <img src="./images/p1.jpg" alt="">
+                <div class="project-content">
+                  <h2>ILLUSTRATION</h2>
+                  <span>Red Wine Town | Time 01/2021</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-block">
+              <div class="timeline-img cd-picture ">
+                <img src="images/camera-icon.png" alt="Picture">
+              </div>
+              <div class="timeline-content projects ">
+                <img src="./images/p2.jpg" alt="">
+                <div class="project-content">
+                  <h2>UI DESIGN</h2>
+                  <span>One More Coffee | Time 11/2021</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-block">
+              <div class="timeline-img cd-picture ">
+                <img src="./images/camera-icon.png" alt="Picture">
+              </div>
+              <div class="timeline-content projects ">
+                <img src="./images/p3.jpg" alt="">
+                <div class="project-content">
+                  <h2>LAYOUT DESIGN</h2>
+                  <span>Magazine Design | Time 12/2021</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-block">
+              <div class="timeline-img cd-picture ">
+                <img src="./images/camera-icon.png" alt="Picture">
+              </div>
+              <div class="timeline-content projects ">
+                <img src="./images/p4.jpg" alt="">
+                <div class="project-content">
+                  <h2>WEBSITE DESIGN</h2>
+                  <span>Caring for Autistic Children Web Interface Design | Time 01/2022</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-block">
+              <div class="timeline-img cd-picture ">
+                <img src="./images/camera-icon.png" alt="Picture">
+              </div>
+              <div class="timeline-content projects ">
+                <img src="./images/p5.jpg" alt="">
+                <div class="project-content">
+                  <h2>PACKAGE DESIGN</h2>
+                  <span>PERSONAL PACKAGE DESIGN | Time 11/2021</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+    </section>
+
+   
+
+
+    <footer class="footer_cls">
+      <div class="social_link">
+        <a href="#">
+          <img src="./images/instagram.png" alt="instagram">
+        </a>
+        <a href="#">
+          <img src="./images/facebook.png" alt="facebook">
+        </a>
+        <a href="#">
+          <img src="./images/twitter.png" alt="twitter">
+        </a>
+      </div>
+      <p class="copyright">© 2022 LU MIAO. All Rights Reserved.</p>
+    </footer>
+  </main>
+  <script>
+    var mySwiper = new Swiper('.swiper', {
+      autoplay: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    })
+  </script>
+</body>
+
+</html>

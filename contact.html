@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <title>Miao</title>
+</head>
+
+<body>
+  <main class="main_container">
+    <header class="header_cls">
+      <img class="logo_img" src="./images/logo.png" alt="miao">
+      <nav class="menu">
+        <p class="menu_item active"><a href="./index.html">HOME</a></p>
+        <p class="menu_item"><a href="./about.html">ABOUT</a></p>
+        <p class="menu_item"><a href="./portfolio.html">PORTFOLIO</a></p>
+        <p class="menu_item"><a href="./contact.html">CONTACT</a></p>
+      </nav>
+    </header>
+
+
+    <section class="body_cls">
+      <h1 class="title">
+        <img class="flower_img" src="./images/flower.png" alt="flower">
+        <span class="label">Contact Me</span></span>
+      </h1>
+      <p class="desc_p">  Thank you for visiting my website.</p>
+   
+      <p class="desc_p">  Phone :  <span class="primary_orange"> (343) 366-8221  </span> </p>
+      <p class="desc_p">  Email : <span class="primary_orange"> mollymiao0302@gmail.com   </span> </p>
+      <p class="desc_p">  Location : <span class="primary_orange">  ON  K2G 6C3, Canada </span> </p>
+      <br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944555115818!2d-75.75942146651393!
+      3d45.349931482240144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sus!4v1650209314605!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <div class="gallery">
+      <button class="viewall_btn" onclick="document.location='./index.html'">Back to Home</button>
+      </div>
+
+
+      <div class="banner_div">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <!-- slider1 -->
+              <img src="./images/banner1.png" alt="banner1">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/banner2.png" alt="banner2">
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      
+    </section>
+
+
+    <footer class="footer_cls">
+      <div class="social_link">
+        <a href="#">
+          <img src="./images/instagram.png" alt="instagram">
+        </a>
+        <a href="#">
+          <img src="./images/facebook.png" alt="facebook">
+        </a>
+        <a href="#">
+          <img src="./images/twitter.png" alt="twitter">
+        </a>
+      </div>
+      <p class="copyright">© 2022 LU MIAO. All Rights Reserved.</p>
+    </footer>
+  </main>
+  <script>
+    var mySwiper = new Swiper('.swiper', {
+      autoplay: false,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    })
+  </script>
+</body>
+
+</html>
